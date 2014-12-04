@@ -5,12 +5,17 @@
 (function () {
     "use strict";
 
-    document.addEventListener( 'deviceready', onDeviceReady.bind( this ), false );
+    document.addEventListener('deviceready', onDeviceReady.bind(this), false);
+    var meds = {
+
+    };
 
     function onDeviceReady() {
         // Handle the Cordova pause and resume events
         document.addEventListener( 'pause', onPause.bind( this ), false );
         document.addEventListener('resume', onResume.bind(this), false);
+
+        
 
         nfc.addNdefListener(onNfcRead);
         // TODO: Cordova has been loaded. Perform any initialization that requires Cordova here.
@@ -42,7 +47,18 @@
 
         }
 
-        alert(value);
+        var u = new SpeechSynthesisUtterance();
+        var voices = window.speechSynthesis.getVoices();
+        console.log(voices);
+        u.voice = voices[0];
+        u.lang = "en-US";
+
+
+
+        u.text = "Take 2 " + value;
+        speechSynthesis.speak(u);
+
+        //alert(value);
     }
 
     function onPause() {

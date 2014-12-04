@@ -155,6 +155,16 @@
     <Content Include="plugins\com.chariotsolutions.nfc.plugin\tests\tests.js" />
     <Content Include="plugins\com.chariotsolutions.nfc.plugin\www\phonegap-nfc-blackberry.js" />
     <Content Include="plugins\com.chariotsolutions.nfc.plugin\www\phonegap-nfc.js" />
+    <Content Include="plugins\org.apache.cordova.speech.speechsynthesis\.fetch.json" />
+    <Content Include="plugins\org.apache.cordova.speech.speechsynthesis\LICENSE" />
+    <Content Include="plugins\org.apache.cordova.speech.speechsynthesis\plugin.xml" />
+    <Content Include="plugins\org.apache.cordova.speech.speechsynthesis\README.md" />
+    <Content Include="plugins\org.apache.cordova.speech.speechsynthesis\src\android\SpeechSynthesis.java" />
+    <Content Include="plugins\org.apache.cordova.speech.speechsynthesis\www\SpeechSynthesis.js" />
+    <Content Include="plugins\org.apache.cordova.speech.speechsynthesis\www\SpeechSynthesisEvent.js" />
+    <Content Include="plugins\org.apache.cordova.speech.speechsynthesis\www\SpeechSynthesisUtterance.js" />
+    <Content Include="plugins\org.apache.cordova.speech.speechsynthesis\www\SpeechSynthesisVoice.js" />
+    <Content Include="plugins\org.apache.cordova.speech.speechsynthesis\www\SpeechSynthesisVoiceList.js" />
     <Content Include="scripts\index.js" />
     <Content Include="scripts\platformOverrides.js" />
     <Content Include="css\index.css" />

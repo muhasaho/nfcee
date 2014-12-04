@@ -30,11 +30,11 @@
       <Configuration>Debug</Configuration>
       <Platform>Windows Phone 8</Platform>
     </ProjectConfiguration>
-	<ProjectConfiguration Include="Debug|Windows Phone (Universal)">
-	  <Configuration>Debug</Configuration>
-	  <Platform>Windows Phone (Universal)</Platform>
-	</ProjectConfiguration>
-	<ProjectConfiguration Include="Release|Android">
+    <ProjectConfiguration Include="Debug|Windows Phone (Universal)">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Android">
       <Configuration>Release</Configuration>
       <Platform>Android</Platform>
     </ProjectConfiguration>
@@ -62,11 +62,11 @@
       <Configuration>Release</Configuration>
       <Platform>Windows Phone 8</Platform>
     </ProjectConfiguration>
-	<ProjectConfiguration Include="Release|Windows Phone (Universal)">
-	  <Configuration>Release</Configuration>
-	  <Platform>Windows Phone (Universal)</Platform>
-	</ProjectConfiguration>
-	<ProjectConfiguration Include="Distribution|Android">
+    <ProjectConfiguration Include="Release|Windows Phone (Universal)">
+      <Configuration>Release</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Android">
       <Configuration>Distribution</Configuration>
       <Platform>Android</Platform>
     </ProjectConfiguration>
@@ -94,10 +94,10 @@
       <Configuration>Distribution</Configuration>
       <Platform>Windows Phone 8</Platform>
     </ProjectConfiguration>
-	<ProjectConfiguration Include="Distribution|Windows Phone (Universal)">
-	  <Configuration>Distribution</Configuration>
-	  <Platform>Windows Phone (Universal)</Platform>
-	</ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows Phone (Universal)">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>9cb0086f-f2e6-4162-8257-4a2b62dd3e77</ProjectGuid>
@@ -127,10 +127,34 @@
     <Folder Include="res\screens\wp8\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="config.xml" >
+    <Content Include="config.xml">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="index.html" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\.fetch.json" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\CHANGES.txt" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\doc\GettingStarted.md" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\doc\GettingStartedCLI.md" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\doc\read_tag_1_basic_app.png" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\doc\read_tag_2_dump_tag.png" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\doc\read_tag_3_payload_as_string.png" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\INSTALL.md" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\LICENSE.txt" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\plugin.xml" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\README.md" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\src\android\org\apache\cordova\api\Dummy.java" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\src\android\src\com\chariotsolutions\nfc\plugin\NfcPlugin.java" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\src\android\src\com\chariotsolutions\nfc\plugin\Util.java" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\src\blackberry10\index.js" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\src\webworks\build.xml" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\src\webworks\src\com\chariotsolutions\nfc\plugin\NfcPlugin.java" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\src\webworks\src\com\chariotsolutions\nfc\plugin\Util.java" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\src\windows-phone-8\Ndef.cs" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\src\windows-phone-8\NfcPlugin.cs" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\tests\plugin.xml" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\tests\tests.js" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\www\phonegap-nfc-blackberry.js" />
+    <Content Include="plugins\com.chariotsolutions.nfc.plugin\www\phonegap-nfc.js" />
     <Content Include="scripts\index.js" />
     <Content Include="scripts\platformOverrides.js" />
     <Content Include="css\index.css" />
@@ -154,13 +178,13 @@
     <Content Include="res\icons\ios\icon-small-2x.png" />
     <Content Include="res\icons\windows\logo.png" />
     <Content Include="res\icons\windows\smalllogo.png" />
-	<Content Include="res\icons\windows\Square150x150Logo.scale-240.png" />
-	<Content Include="res\icons\windows\Square44x44Logo.scale-240.png" />
-	<Content Include="res\icons\windows\Square71x71Logo.scale-240.png" />
+    <Content Include="res\icons\windows\Square150x150Logo.scale-240.png" />
+    <Content Include="res\icons\windows\Square44x44Logo.scale-240.png" />
+    <Content Include="res\icons\windows\Square71x71Logo.scale-240.png" />
     <Content Include="res\icons\windows\storelogo.png" />
-	<Content Include="res\icons\windows\StoreLogo.scale-240.png" />
-	<Content Include="res\icons\windows\Wide310x150Logo.scale-240.png" />
-	<Content Include="res\icons\wp8\icon-62-tile.png" />
+    <Content Include="res\icons\windows\StoreLogo.scale-240.png" />
+    <Content Include="res\icons\windows\Wide310x150Logo.scale-240.png" />
+    <Content Include="res\icons\wp8\icon-62-tile.png" />
     <Content Include="res\icons\wp8\icon-173-tile.png" />
     <Content Include="res\native\android\ant.properties" />
     <Content Include="res\screens\android\screen-hdpi-landscape.png" />
@@ -179,7 +203,7 @@
     <Content Include="res\screens\ios\screen-iphone-portrait.png" />
     <Content Include="res\screens\ios\screen-iphone-portrait-2x.png" />
     <Content Include="res\screens\windows\splashscreen.png" />
-	<Content Include="res\screens\windows\SplashScreen.scale-240.png" />
+    <Content Include="res\screens\windows\SplashScreen.scale-240.png" />
     <Content Include="res\screens\wp8\screen-portrait.jpg" />
   </ItemGroup>
   <PropertyGroup>
@@ -196,7 +220,7 @@
     <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
     <TypeScriptSourceMap>false</TypeScriptSourceMap>
   </PropertyGroup>
-    <PropertyGroup Condition="'$(Configuration)' == 'Distribution'">
+  <PropertyGroup Condition="'$(Configuration)' == 'Distribution'">
     <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
     <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
     <TypeScriptSourceMap>false</TypeScriptSourceMap>
@@ -213,17 +237,13 @@
     <!-- These errors will trigger if building from inside Visual Studio and requirements could not be determined -->
     <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(NodeJsDir) == ''" Text="Path to NodeJs could not be determined. Please check that NodeJs has been installed." />
     <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(MDAVsixDir) == ''" Text="Path to the Visual Studio Extension for Tools for Apache Cordova could not be determined. Please check that the extension has been installed." />
-
     <!-- These errors will trigger if building from outside Visual Studio (e.g. command line) and environment variables have not been set -->
     <Error Condition="$(MDAPropertiesEvaluated) == '' And $(NodeJsDir) == ''" Text="Path to NodeJs has not been specified. Please check that NodeJs has been installed and set the NodeJsDir environment variable before building." />
     <Error Condition="$(MDAPropertiesEvaluated) == '' And $(MDAVsixDir) == ''" Text="Path to Visual Studio Extension for Tools for Apache Cordova has not been specified. Please install it and set the MDAVsixDir environment variable before building." />
-
     <!-- Sanity check that things exist in the specified places. These are more likely to fail if building outside Visual Studio and the required environment variables have not been set, or set incorrectly. -->
     <Error Condition="!Exists('$(NodeJsDir)') Or !Exists('$(NodeJsDir)\node.exe')" Text="The specified NodeJs directory $(NodeJsDir) either does not exist, or does not contain node.exe. Please check that NodeJs has been installed, and set the NodeJsDir variable to the correct directory." />
     <Error Condition="!Exists('$(MDAVsixDir)') Or !Exists('$(MDAVsixDir)\packages\vs-mda')" Text="The specified directory to the Visual Studio extension $(MDAVsixDir)\node.exe either does not exist, or does not contain a packages\vs-mda sub-directory. Please check that the extension directory exists and set the MDAVsixDir variable to the correct directory." />
-
     <!-- Installs (if necessary) the supporting Nodejs module -->
-    <Exec Command='"$(MDAVsixDir)"\packages\vs-mda\install "$(NodeJsDir)" "$(MDAVsixDir)"\packages\vs-mda'/>
+    <Exec Command="&quot;$(MDAVsixDir)&quot;\packages\vs-mda\install &quot;$(NodeJsDir)&quot; &quot;$(MDAVsixDir)&quot;\packages\vs-mda" />
   </Target>
-
 </Project>

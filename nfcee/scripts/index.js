@@ -10,10 +10,40 @@
     function onDeviceReady() {
         // Handle the Cordova pause and resume events
         document.addEventListener( 'pause', onPause.bind( this ), false );
-        document.addEventListener( 'resume', onResume.bind( this ), false );
-        
+        document.addEventListener('resume', onResume.bind(this), false);
+
+        nfc.addNdefListener(onNfcRead);
         // TODO: Cordova has been loaded. Perform any initialization that requires Cordova here.
     };
+
+    function bin2String(array) {
+        var result = "";
+        for (var i = 0; i < array.length; i++) {
+            result += String.fromCharCode(parseInt(array[i], 2));
+        }
+        return result;
+    }
+
+    function onNfcRead(nfcEvent) {
+        console.log(nfcEvent);
+        var tag = nfcEvent.tag,
+            message = tag.ndefMessage,
+            record = message[0],
+            value;
+
+        if (util.isType(record, ndef.TNF_WELL_KNOWN, ndef.RTD_URI)) {
+            value = ndef.uriHelper.decodePayload(record.payload);
+
+        } else if (util.isType(record, ndef.TNF_WELL_KNOWN, ndef.RTD_TEXT)) {
+            value = ndef.textHelper.decodePayload(record.payload);
+
+        } else {
+            value = JSON.stringify(record);
+
+        }
+
+        alert(value);
+    }
 
     function onPause() {
         // TODO: This application has been suspended. Save application state here.

@@ -7,7 +7,10 @@
 
     document.addEventListener('deviceready', onDeviceReady.bind(this), false);
     var meds = {
-
+        "Tylenol": "default",
+        "Pepto-Bismol": "default",
+        "Sudafed": "default",
+        "Ibuprofen": "default"
     };
 
     function onDeviceReady() {
@@ -51,17 +54,29 @@
         //Create speech
         var u = new SpeechSynthesisUtterance();
         var voices = window.speechSynthesis.getVoices();
-        console.log(voices);
         u.voice = voices[0];
         u.lang = "en-US";
 
 
-        if (meds[value] == "taken") {
-            u.text = "Sorry, but you had enough " + value +" for the day";            
-        }
-        else {
+        //if (meds[value] == "taken") {   //med is already taken
+        //    u.text = "Sorry, but you had enough " + value +" for the day";            
+        //}
+        //else {      //med not taken yet
+        //    u.text = "Take 2 " + value;
+        //    meds[value] = "taken";
+        //}
+        
+        console.log(meds);
+        if (meds[value] == "take") {
             u.text = "Take 2 " + value;
             meds[value] = "taken";
+        }
+        else if (meds[value] == "taken") {
+            u.text = "Sorry, but you had enough " + value + " for the day";
+        }
+        else{
+            u.text = "This is " + value + ". Tap again to take prescription.";
+            meds[value] = "take";
         }
 
         

@@ -29,6 +29,7 @@
         return result;
     }
 
+    //this will fire when tag is read
     function onNfcRead(nfcEvent) {
         console.log(nfcEvent);
         var tag = nfcEvent.tag,
@@ -47,6 +48,7 @@
 
         }
 
+        //Create speech
         var u = new SpeechSynthesisUtterance();
         var voices = window.speechSynthesis.getVoices();
         console.log(voices);
@@ -54,8 +56,15 @@
         u.lang = "en-US";
 
 
+        if (meds[value] == "taken") {
+            u.text = "Sorry, but you had enough " + value +" for the day";            
+        }
+        else {
+            u.text = "Take 2 " + value;
+            meds[value] = "taken";
+        }
 
-        u.text = "Take 2 " + value;
+        
         speechSynthesis.speak(u);
 
         //alert(value);

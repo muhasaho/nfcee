@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "nfcee", "nfcee\nfcee.jsproj", "{9CB0086F-F2E6-4162-8257-4A2B62DD3E77}"
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "pillC", "nfcee\pillC.jsproj", "{9CB0086F-F2E6-4162-8257-4A2B62DD3E77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
